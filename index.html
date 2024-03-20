@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="./guess.css">
+</head>
+<body>
+    <div class="guess-cont">
+        <h1 id="title">Guess the Number</h1>
+        <h2 id="desc">A fun game to kill <strong>Time</strong></h2>
+        <h2 id="tips">Guess a number between 1 and 100</h2>
+        <input  id="guess-input" type="number" placeholder="Enter the Number" max="100" min="1" required>
+        <div class="result">
+            <button id="check" onclick="checkNumber();">Check</button>
+            <h1 id="res-text">Results will be displayed here</h1>
+            <button id="reset" onclick="window.location.reload();">Reset</button>
+        </div>
+        <div class="tries">
+            <h1 id="tries-text">Total Tries: </h1>
+            <h1 id="try">0</h1>
+        </div>
+    </div>
+
+    <script src="./gusnum.js"></script>
+</body>
+</html>
